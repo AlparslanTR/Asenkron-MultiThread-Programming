@@ -22,11 +22,20 @@ public class Program
         {
             taskList.Add(GetContentAsync(x));
         });
-        var contents = await Task.WhenAll(taskList.ToArray());
-        contents.ToList().ForEach(x =>
-        {
-            Console.WriteLine($"{x.Site} boyut:{x.Lenght}");
-        });
+        //var contents = await Task.WhenAll(taskList.ToArray()); // Burada bütün siteler geliyor.
+        //contents.ToList().ForEach(x =>
+        //{
+        //    Console.WriteLine($"{x.Site} boyut:{x.Lenght}");
+        //});
+
+        /*var firstData= await Task.WhenAny(taskList);*/ // Herhangi 1 site geliyor.
+        Console.WriteLine("Wait All Methodundan Önce");
+        bool result= Task.WaitAll(taskList.ToArray(),3000); // 3 Saniye Bekletiyor.
+        Console.WriteLine("3 Saniye Çalışıyor mu: "+result);
+        Console.WriteLine("Wait All Methodundan Sonra 5 Saniye Bekle");
+        await Task.Delay(5000); // 5 Saniye Sonra İşlemin Gerçekleşmesini Sağlar.
+        Console.WriteLine($"{taskList.First().Result.Site} - {taskList.First().Result.Lenght}");
+
     }
 
     public static async Task <Content> GetContentAsync(string url)
