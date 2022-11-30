@@ -18,5 +18,6 @@ public class Program
         Status s = myTask.AsyncState as Status;
         Console.WriteLine(s.Date);
         Console.WriteLine(s.ThreadId);
+        //start new metodu
     }
 }
