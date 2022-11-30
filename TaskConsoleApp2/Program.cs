@@ -1,5 +1,5 @@
 ﻿using static System.Net.WebRequestMethods;
-
+// WhenAll ve WaitAll Metotları işlendi.
 public class Content
 {
     public string Site { get; set; }
