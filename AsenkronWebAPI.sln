@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskCancellationTokenAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEachPararelApp", "ForEachPararelApp\ForEachPararelApp.csproj", "{7225F00E-43A6-49E7-9BB3-6858F29DAA68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskRaceConditionApp", "TaskRaceConditionApp\TaskRaceConditionApp.csproj", "{97B2743A-4F2F-48FA-9611-618D928F7A69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskRaceConditionApp", "TaskRaceConditionApp\TaskRaceConditionApp.csproj", "{97B2743A-4F2F-48FA-9611-618D928F7A69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLINQApp", "PLINQApp\PLINQApp.csproj", "{5B011F96-6587-42D4-8998-0969F473381D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{97B2743A-4F2F-48FA-9611-618D928F7A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97B2743A-4F2F-48FA-9611-618D928F7A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97B2743A-4F2F-48FA-9611-618D928F7A69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B011F96-6587-42D4-8998-0969F473381D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B011F96-6587-42D4-8998-0969F473381D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B011F96-6587-42D4-8998-0969F473381D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B011F96-6587-42D4-8998-0969F473381D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
